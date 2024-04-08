@@ -44,6 +44,7 @@ namespace LearningInheritance
             myBycicle.Year = 2020;
             myBycicle.Color = "Green";
             myBycicle.Route = "Service Lane";
+            myBycicle.brake = "One brake needed";
             printVehicleDetails(myBycicle);
             Console.ReadLine();
 

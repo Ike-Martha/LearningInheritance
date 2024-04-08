@@ -20,7 +20,7 @@ namespace LearningInheritance
     class Car : Vehicle
     {
         public override string FormatMe()//helper method//the virtual keyword permits you to 
-                                         //take from this method while the abstract also permits but you must make some changes
+                   //take from this method while the abstract also permits but you must make some changes
         {
             return string.Format("{0} - {1} - {2} - {3}",
                 this.Make,
@@ -66,13 +66,17 @@ namespace LearningInheritance
         class Bycicle : Vehicle
         {
             public string Route { get; set; }
+            public string brake { get; set; }
+
             public override string FormatMe()
             {
-                return string.Format("{0} - {1} -{2} make use of the service lane",
+                return string.Format("{0} - {1} -{2} - {3} - {4} - {5}",
                     this.Make,
                     this.Model,
                     this.Year,
-                    this.Route);
+                    this.Color,
+                    this.Route,
+                    this.brake);
             }
 
         }
